@@ -1,0 +1,633 @@
+2023-04-13 11:07:39.140  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:07:39.141  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:07:39.191  INFO 3232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-13 11:07:39.191  INFO 3232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-13 11:07:39.720  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:07:39.769  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:07:39.887  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:07:40.349  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:07:40.359  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:07:40.359  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:07:40.440  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:07:40.440  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1248 ms
+2023-04-13 11:07:40.619  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:07:40.667  INFO 3232 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 11:07:40.814  INFO 3232 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:07:40.902  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 11:07:41.195  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 11:07:41.211  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:07:41.761  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:07:41.771  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:07:42.153  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37b72fc0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d1ca9ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@7268807e, org.springframework.security.web.header.HeaderWriterFilter@4633b22a, org.springframework.security.web.authentication.logout.LogoutFilter@20d66296, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d925d19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8547b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d912045, org.springframework.security.web.session.SessionManagementFilter@74675a8c, org.springframework.security.web.access.ExceptionTranslationFilter@55c4e538]
+2023-04-13 11:07:42.184  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:07:42.545  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:07:42.585  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:07:42.594  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 3.793 seconds (JVM running for 4.472)
+2023-04-13 11:08:17.004  INFO 3232 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 11:08:17.005  INFO 3232 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-13 11:08:17.006  INFO 3232 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-13 11:09:12.417  INFO 3232 --- [http-nio-8181-exec-4] kr.co.voard.controller.UserController    : vo : UserVO(uid=, pass1=null, pass2=null, pass=, name=null, nick=null, email=null, hp=null, grade=0, zip=null, addr1=null, addr2=null, regip=null, rdate=null)
+2023-04-13 11:09:14.667  INFO 3232 --- [http-nio-8181-exec-5] kr.co.voard.controller.UserController    : vo : UserVO(uid=, pass1=null, pass2=null, pass=, name=null, nick=null, email=null, hp=null, grade=0, zip=null, addr1=null, addr2=null, regip=null, rdate=null)
+2023-04-13 11:09:31.708  INFO 3232 --- [http-nio-8181-exec-8] kr.co.voard.controller.UserController    : vo : UserVO(uid=a102, pass1=null, pass2=null, pass=12324, name=null, nick=null, email=null, hp=null, grade=0, zip=null, addr1=null, addr2=null, regip=null, rdate=null)
+2023-04-13 11:11:43.574  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:11:43.582  INFO 3232 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:11:43.583  INFO 3232 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-13 11:11:43.589  INFO 3232 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:11:43.591  INFO 3232 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-13 11:11:43.597  INFO 3232 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-13 11:11:43.671  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:11:43.672  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:11:43.822  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:11:43.829  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:11:43.866  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:11:43.911  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:11:43.911  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:11:43.911  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:11:43.931  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:11:43.932  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2023-04-13 11:11:43.960  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:11:43.965  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-13 11:11:43.975  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-13 11:11:43.976  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:11:44.004  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:11:44.004  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:11:44.066  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b26be6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75bd5720, org.springframework.security.web.context.SecurityContextPersistenceFilter@606c36fe, org.springframework.security.web.header.HeaderWriterFilter@53d84c3f, org.springframework.security.web.authentication.logout.LogoutFilter@2492dceb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3aa0b57b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b08afa4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16bd2ff8, org.springframework.security.web.session.SessionManagementFilter@38c6c10e, org.springframework.security.web.access.ExceptionTranslationFilter@2a9e1111]
+2023-04-13 11:11:44.073  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:11:44.187  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:11:44.197  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:11:44.202  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.557 seconds (JVM running for 246.08)
+2023-04-13 11:11:44.203  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:22.967  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:22.973  INFO 3232 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:22.976  INFO 3232 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:22.977  INFO 3232 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-13 11:14:22.982  INFO 3232 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-13 11:14:23.060  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:23.060  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:23.204  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:23.210  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:23.241  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:23.284  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:23.284  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:23.285  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:23.306  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:23.306  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 244 ms
+2023-04-13 11:14:23.335  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:23.340  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-13 11:14:23.348  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-13 11:14:23.349  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:23.377  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:23.377  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:23.441  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68f37cbe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c9fcfa8, org.springframework.security.web.context.SecurityContextPersistenceFilter@10f257bc, org.springframework.security.web.header.HeaderWriterFilter@669a692e, org.springframework.security.web.authentication.logout.LogoutFilter@2f1d5aa1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@367e2ae6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@398e61e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45f858c, org.springframework.security.web.session.SessionManagementFilter@495ce75a, org.springframework.security.web.access.ExceptionTranslationFilter@34424d01]
+2023-04-13 11:14:23.450  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:23.552  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:23.561  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:23.565  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.53 seconds (JVM running for 405.443)
+2023-04-13 11:14:23.567  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:34.121  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:34.126  INFO 3232 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:34.129  INFO 3232 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:34.129  INFO 3232 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-04-13 11:14:34.133  INFO 3232 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-04-13 11:14:34.202  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:34.203  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:34.335  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:34.342  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:34.374  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:34.411  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:34.412  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:34.412  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:34.429  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:34.429  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 224 ms
+2023-04-13 11:14:34.458  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:34.462  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-04-13 11:14:34.471  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-04-13 11:14:34.472  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:34.501  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:34.501  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:34.559  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2314db90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771b4e55, org.springframework.security.web.context.SecurityContextPersistenceFilter@75f937e7, org.springframework.security.web.header.HeaderWriterFilter@1bb97949, org.springframework.security.web.authentication.logout.LogoutFilter@3d807a24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@616feca8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314cb2fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27ae8eee, org.springframework.security.web.session.SessionManagementFilter@690b21b6, org.springframework.security.web.access.ExceptionTranslationFilter@6b7fffb7]
+2023-04-13 11:14:34.567  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:34.653  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:34.662  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:34.666  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.488 seconds (JVM running for 416.544)
+2023-04-13 11:14:34.667  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:39.126  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:39.133  INFO 3232 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:39.136  INFO 3232 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:39.137  INFO 3232 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-04-13 11:14:39.141  INFO 3232 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-04-13 11:14:39.210  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:39.211  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:39.344  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:39.352  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:39.380  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:39.419  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:39.420  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:39.420  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:39.436  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:39.436  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 224 ms
+2023-04-13 11:14:39.466  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:39.470  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-04-13 11:14:39.478  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-04-13 11:14:39.479  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:39.503  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:39.503  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:39.560  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42374cf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b31a65a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c9e11a5, org.springframework.security.web.header.HeaderWriterFilter@708797f2, org.springframework.security.web.authentication.logout.LogoutFilter@56c78a00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10a09886, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cd4b567, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48810c8, org.springframework.security.web.session.SessionManagementFilter@1f1733b5, org.springframework.security.web.access.ExceptionTranslationFilter@6f7470c0]
+2023-04-13 11:14:39.567  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:39.652  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:39.660  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:39.663  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.476 seconds (JVM running for 421.541)
+2023-04-13 11:14:39.664  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:47.166  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:47.171  INFO 3232 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:47.174  INFO 3232 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:47.174  INFO 3232 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-04-13 11:14:47.177  INFO 3232 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-04-13 11:14:47.244  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:47.245  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:47.380  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:47.388  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:47.415  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:47.454  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:47.454  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:47.455  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:47.472  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:47.472  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
+2023-04-13 11:14:47.501  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:47.504  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-04-13 11:14:47.512  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-04-13 11:14:47.513  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:47.537  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:47.537  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:47.594  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@eecbeed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@483b91c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@731d5e29, org.springframework.security.web.header.HeaderWriterFilter@49fff0fd, org.springframework.security.web.authentication.logout.LogoutFilter@d191b63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ea5aa7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18ebcf4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b3a116c, org.springframework.security.web.session.SessionManagementFilter@782e84b6, org.springframework.security.web.access.ExceptionTranslationFilter@3f9c4f2a]
+2023-04-13 11:14:47.603  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:47.680  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:47.690  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:47.693  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.471 seconds (JVM running for 429.571)
+2023-04-13 11:14:47.694  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:52.158  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:52.165  INFO 3232 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:52.168  INFO 3232 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:52.168  INFO 3232 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-04-13 11:14:52.172  INFO 3232 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-04-13 11:14:52.238  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:52.238  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:52.370  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:52.376  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:52.404  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:52.441  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:52.441  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:52.442  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:52.458  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:52.459  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 218 ms
+2023-04-13 11:14:52.489  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:52.493  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-04-13 11:14:52.501  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-04-13 11:14:52.501  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:52.523  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:52.524  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:52.578  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f2c3eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5ba1a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@794d4719, org.springframework.security.web.header.HeaderWriterFilter@49e653c4, org.springframework.security.web.authentication.logout.LogoutFilter@6f58d021, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e3aaf7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45b9a30e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1419236, org.springframework.security.web.session.SessionManagementFilter@46fff829, org.springframework.security.web.access.ExceptionTranslationFilter@7c80f09]
+2023-04-13 11:14:52.585  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:52.684  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:52.693  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:52.697  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.479 seconds (JVM running for 434.575)
+2023-04-13 11:14:52.698  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:14:59.184  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:14:59.189  INFO 3232 --- [Thread-27] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:14:59.192  INFO 3232 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:59.192  INFO 3232 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-04-13 11:14:59.195  INFO 3232 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-04-13 11:14:59.263  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:14:59.263  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:14:59.391  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:14:59.399  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:14:59.430  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:14:59.467  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:14:59.468  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:14:59.468  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:14:59.488  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:14:59.488  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 222 ms
+2023-04-13 11:14:59.514  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:14:59.518  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-04-13 11:14:59.525  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-04-13 11:14:59.525  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:14:59.549  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:14:59.550  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:14:59.604  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5cd0662e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cc89f8e, org.springframework.security.web.context.SecurityContextPersistenceFilter@516a0373, org.springframework.security.web.header.HeaderWriterFilter@7cec8710, org.springframework.security.web.authentication.logout.LogoutFilter@1210f542, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72379731, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a7b5a60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fd5b17c, org.springframework.security.web.session.SessionManagementFilter@58e430c1, org.springframework.security.web.access.ExceptionTranslationFilter@733a089f]
+2023-04-13 11:14:59.610  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:14:59.684  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:14:59.695  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:14:59.700  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.461 seconds (JVM running for 441.578)
+2023-04-13 11:14:59.701  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:15:02.123  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:15:02.128  INFO 3232 --- [Thread-31] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:15:02.132  INFO 3232 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:15:02.132  INFO 3232 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-04-13 11:15:02.136  INFO 3232 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-04-13 11:15:02.204  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:15:02.204  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:15:02.336  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:15:02.342  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:15:02.370  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:15:02.407  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:15:02.407  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:15:02.407  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:15:02.426  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:15:02.426  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2023-04-13 11:15:02.453  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:15:02.457  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-04-13 11:15:02.465  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-04-13 11:15:02.465  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:15:02.486  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:15:02.486  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:15:02.541  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bde01e6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ec9c1d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@10be640, org.springframework.security.web.header.HeaderWriterFilter@6385030b, org.springframework.security.web.authentication.logout.LogoutFilter@437e6dbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ea8dc1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@657e0f9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e0d9377, org.springframework.security.web.session.SessionManagementFilter@6c3295b7, org.springframework.security.web.access.ExceptionTranslationFilter@7cfa6ed9]
+2023-04-13 11:15:02.549  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:15:02.639  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:15:02.649  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:15:02.652  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.47 seconds (JVM running for 444.531)
+2023-04-13 11:15:02.653  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:16:24.278  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:16:24.285  INFO 3232 --- [Thread-35] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:16:24.288  INFO 3232 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:16:24.288  INFO 3232 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-04-13 11:16:24.291  INFO 3232 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-04-13 11:16:24.360  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:16:24.360  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:16:24.493  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:16:24.501  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:16:24.530  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:16:24.568  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:16:24.568  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:16:24.568  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:16:24.587  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:16:24.587  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
+2023-04-13 11:16:24.613  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:16:24.617  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2023-04-13 11:16:24.624  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2023-04-13 11:16:24.625  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:16:24.653  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:16:24.653  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:16:24.658  WARN 3232 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes\kr\co\voard\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.co.voard.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AuthenticationManager cannot be resolved to a type
+	Syntax error, insert ":: IdentifierOrNew" to complete Expression
+	Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+	Authentication cannot be resolved to a variable
+
+2023-04-13 11:16:24.658  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:16:24.658  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2023-04-13 11:16:24.659  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2023-04-13 11:16:24.660  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:16:24.665  INFO 3232 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 11:16:24.687 ERROR 3232 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes\kr\co\voard\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.co.voard.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AuthenticationManager cannot be resolved to a type
+	Syntax error, insert ":: IdentifierOrNew" to complete Expression
+	Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+	Authentication cannot be resolved to a variable
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.10.jar:2.7.10]
+	at kr.co.voard.VoardApplication.main(VoardApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.10.jar:2.7.10]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.co.voard.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AuthenticationManager cannot be resolved to a type
+	Syntax error, insert ":: IdentifierOrNew" to complete Expression
+	Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+	Authentication cannot be resolved to a variable
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.26.jar:5.3.26]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	AuthenticationManager cannot be resolved to a type
+	Syntax error, insert ":: IdentifierOrNew" to complete Expression
+	Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+	Authentication cannot be resolved to a variable
+
+	at kr.co.voard.controller.UserController.<init>(UserController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.26.jar:5.3.26]
+	... 24 common frames omitted
+
+2023-04-13 11:16:42.353  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:16:42.353  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:16:42.490  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:16:42.497  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:16:42.530  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:16:42.568  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:16:42.569  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:16:42.569  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:16:42.586  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:16:42.586  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 232 ms
+2023-04-13 11:16:42.610  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:16:42.615  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2023-04-13 11:16:42.622  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2023-04-13 11:16:42.622  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:16:42.654  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:16:42.655  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:16:42.718  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@606daea0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bad2a10, org.springframework.security.web.context.SecurityContextPersistenceFilter@784d6c1b, org.springframework.security.web.header.HeaderWriterFilter@7e28d168, org.springframework.security.web.authentication.logout.LogoutFilter@7ab901d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79bc6e40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41a7438e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ed5a186, org.springframework.security.web.session.SessionManagementFilter@6439862a, org.springframework.security.web.access.ExceptionTranslationFilter@4959052f]
+2023-04-13 11:16:42.724  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:16:42.802  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:16:42.811  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:16:42.815  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.48 seconds (JVM running for 544.693)
+2023-04-13 11:16:42.816  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:17:27.875  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:17:27.881  INFO 3232 --- [Thread-39] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:17:27.884  INFO 3232 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:17:27.885  INFO 3232 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2023-04-13 11:17:27.888  INFO 3232 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2023-04-13 11:17:28.001  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:17:28.002  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:17:28.148  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:17:28.155  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:17:28.182  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:17:28.219  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:17:28.219  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:17:28.219  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:17:28.238  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:17:28.239  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2023-04-13 11:17:28.264  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:17:28.268  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2023-04-13 11:17:28.275  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2023-04-13 11:17:28.275  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:17:28.294  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:17:28.294  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:17:28.350  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d028735, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41820060, org.springframework.security.web.context.SecurityContextPersistenceFilter@22234cc5, org.springframework.security.web.header.HeaderWriterFilter@605bab20, org.springframework.security.web.authentication.logout.LogoutFilter@1e137f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50658f46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d5a3cc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18cc1ea3, org.springframework.security.web.session.SessionManagementFilter@6f0772ba, org.springframework.security.web.access.ExceptionTranslationFilter@1c2dc324]
+2023-04-13 11:17:28.357  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:17:28.437  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:17:28.446  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:17:28.449  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.482 seconds (JVM running for 590.327)
+2023-04-13 11:17:28.450  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:20:42.556  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:20:42.562  INFO 3232 --- [Thread-46] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:20:42.567  INFO 3232 --- [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:20:42.568  INFO 3232 --- [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2023-04-13 11:20:42.572  INFO 3232 --- [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2023-04-13 11:20:42.645  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:20:42.645  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:20:42.779  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:20:42.787  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:20:42.816  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:20:42.853  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:20:42.853  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:20:42.853  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:20:42.873  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:20:42.873  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 226 ms
+2023-04-13 11:20:42.896  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:20:42.900  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2023-04-13 11:20:42.908  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2023-04-13 11:20:42.908  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:20:42.928  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:20:42.928  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:20:42.986  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11c68a4a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dcee499, org.springframework.security.web.context.SecurityContextPersistenceFilter@77c23b45, org.springframework.security.web.header.HeaderWriterFilter@2e6c22b, org.springframework.security.web.authentication.logout.LogoutFilter@7202671c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d05d452, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7946b043, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a33b3a3, org.springframework.security.web.session.SessionManagementFilter@7b62d6b8, org.springframework.security.web.access.ExceptionTranslationFilter@6eda84f3]
+2023-04-13 11:20:42.992  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:20:43.075  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:20:43.083  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:20:43.086  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.462 seconds (JVM running for 784.965)
+2023-04-13 11:20:43.087  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:25:17.936  INFO 3232 --- [http-nio-8181-exec-1] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 11:25:17.936  INFO 3232 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-13 11:25:17.937  INFO 3232 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-13 11:26:39.976  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:26:39.981  INFO 3232 --- [Thread-50] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:26:39.982  INFO 3232 --- [Thread-50] o.a.c.c.C.[.[localhost].[/Voard]         : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-13 11:26:39.985  INFO 3232 --- [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:26:39.985  INFO 3232 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2023-04-13 11:26:39.988  INFO 3232 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2023-04-13 11:26:40.058  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:26:40.059  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:26:40.186  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:26:40.192  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:26:40.221  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:26:40.258  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:26:40.258  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:26:40.258  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:26:40.277  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:26:40.277  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms
+2023-04-13 11:26:40.301  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:26:40.304  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2023-04-13 11:26:40.311  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2023-04-13 11:26:40.311  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:26:40.331  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:26:40.331  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:26:40.384  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38dd3cf4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ddcfaeb, org.springframework.security.web.context.SecurityContextPersistenceFilter@a31195c, org.springframework.security.web.header.HeaderWriterFilter@57ec0c09, org.springframework.security.web.authentication.logout.LogoutFilter@34d79ad2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b32f69a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c893db1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fc5a46c, org.springframework.security.web.session.SessionManagementFilter@10a14389, org.springframework.security.web.access.ExceptionTranslationFilter@19f11c7c]
+2023-04-13 11:26:40.392  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:26:40.486  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:26:40.495  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:26:40.498  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.458 seconds (JVM running for 1142.376)
+2023-04-13 11:26:40.499  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:52:28.649  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:52:28.655  INFO 3232 --- [Thread-54] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:52:28.658  INFO 3232 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:28.658  INFO 3232 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-04-13 11:52:28.663  INFO 3232 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2023-04-13 11:52:28.743  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:52:28.743  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:52:28.892  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:52:28.900  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:52:28.932  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:52:28.975  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:52:28.976  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:52:28.976  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:52:28.992  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:52:28.992  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
+2023-04-13 11:52:29.026  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:52:29.031  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2023-04-13 11:52:29.039  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2023-04-13 11:52:29.039  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:52:29.058  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:52:29.059  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:29.135  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71105c22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd62c7, org.springframework.security.web.context.SecurityContextPersistenceFilter@16f6e73b, org.springframework.security.web.header.HeaderWriterFilter@4d69e0ec, org.springframework.security.web.authentication.logout.LogoutFilter@67b004ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17e02ad9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@158cc649, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33d32140, org.springframework.security.web.session.SessionManagementFilter@60ab161, org.springframework.security.web.access.ExceptionTranslationFilter@26d4e874]
+2023-04-13 11:52:29.148  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:52:29.274  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:52:29.284  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:52:29.287  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.567 seconds (JVM running for 2691.165)
+2023-04-13 11:52:29.288  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:52:41.854  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:52:41.862  INFO 3232 --- [Thread-58] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:52:41.867  INFO 3232 --- [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:41.867  INFO 3232 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2023-04-13 11:52:41.874  INFO 3232 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2023-04-13 11:52:41.953  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:52:41.953  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:52:42.143  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:52:42.150  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:52:42.177  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:52:42.218  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:52:42.218  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:52:42.219  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:52:42.239  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:52:42.239  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2023-04-13 11:52:42.268  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:52:42.273  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2023-04-13 11:52:42.280  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2023-04-13 11:52:42.281  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:52:42.301  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:52:42.301  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:42.358  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@118b85af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f711872, org.springframework.security.web.context.SecurityContextPersistenceFilter@331e2d99, org.springframework.security.web.header.HeaderWriterFilter@6f0ac01d, org.springframework.security.web.authentication.logout.LogoutFilter@4f49ae6f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a2c8617, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39fb367, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b0971f8, org.springframework.security.web.session.SessionManagementFilter@3f363bcb, org.springframework.security.web.access.ExceptionTranslationFilter@4fc8de6b]
+2023-04-13 11:52:42.366  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:52:42.452  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:52:42.460  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:52:42.463  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.537 seconds (JVM running for 2704.342)
+2023-04-13 11:52:42.464  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 11:52:53.039  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 11:52:53.046  INFO 3232 --- [Thread-62] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 11:52:53.050  INFO 3232 --- [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:53.050  INFO 3232 --- [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2023-04-13 11:52:53.055  INFO 3232 --- [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2023-04-13 11:52:53.128  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 11:52:53.128  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 11:52:53.270  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:52:53.277  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:52:53.311  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 11:52:53.351  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 11:52:53.351  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 11:52:53.351  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 11:52:53.366  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:52:53.366  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 236 ms
+2023-04-13 11:52:53.393  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:52:53.397  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2023-04-13 11:52:53.403  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2023-04-13 11:52:53.404  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 11:52:53.421  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:52:53.421  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:52:53.476  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5db33b3a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@356fb7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a63f3ea, org.springframework.security.web.header.HeaderWriterFilter@6613e6c5, org.springframework.security.web.authentication.logout.LogoutFilter@1ed8c9e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@776689c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e3a6c2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17ad8d91, org.springframework.security.web.session.SessionManagementFilter@767c7e43, org.springframework.security.web.access.ExceptionTranslationFilter@7223e97f]
+2023-04-13 11:52:53.483  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:52:53.557  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 11:52:53.567  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Voard'
+2023-04-13 11:52:53.571  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.463 seconds (JVM running for 2715.448)
+2023-04-13 11:52:53.571  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 12:03:51.022  INFO 8580 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 8580 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 12:03:51.023  INFO 8580 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 12:03:51.074  INFO 8580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-13 12:03:51.074  INFO 8580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-13 12:03:51.592  INFO 8580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 12:03:51.637  INFO 8580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2023-04-13 12:03:51.764  WARN 8580 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 12:03:52.171  INFO 8580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-04-13 12:03:52.181  INFO 8580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 12:03:52.181  INFO 8580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 12:03:52.262  INFO 8580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 12:03:52.263  INFO 8580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1188 ms
+2023-04-13 12:03:52.434  INFO 8580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 12:03:52.480  INFO 8580 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 12:03:52.621  INFO 8580 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 12:03:52.709  INFO 8580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 12:03:53.055  INFO 8580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 12:03:53.069  INFO 8580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 12:03:53.589  INFO 8580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 12:03:53.600  INFO 8580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:03:53.982  INFO 8580 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73e5004e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a5b8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fa4f728, org.springframework.security.web.header.HeaderWriterFilter@3e1f8759, org.springframework.security.web.authentication.logout.LogoutFilter@2beaae5a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dbadd26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d629de4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2579cd93, org.springframework.security.web.session.SessionManagementFilter@f8e33c4, org.springframework.security.web.access.ExceptionTranslationFilter@1e93aa31]
+2023-04-13 12:03:54.013  WARN 8580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 12:03:54.332  WARN 8580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-13 12:03:54.354  WARN 8580 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8181 is already in use
+2023-04-13 12:03:54.355  INFO 8580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:03:54.358  INFO 8580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-13 12:03:54.367  INFO 8580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-13 12:03:54.369  INFO 8580 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 12:03:54.380  INFO 8580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 12:03:54.400 ERROR 8580 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8181 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8181 or configure this application to listen on another port.
+
+2023-04-13 12:04:36.806  INFO 3232 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-13 12:04:36.812  INFO 3232 --- [Thread-66] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 12:04:36.815  INFO 3232 --- [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:04:36.816  INFO 3232 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2023-04-13 12:04:36.819  INFO 3232 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2023-04-13 12:04:36.893  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 3232 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 12:04:36.894  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 12:04:37.037  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 12:04:37.043  INFO 3232 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 12:04:37.075  WARN 3232 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 12:04:37.121  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-13 12:04:37.121  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 12:04:37.121  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 12:04:37.138  INFO 3232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Voard]         : Initializing Spring embedded WebApplicationContext
+2023-04-13 12:04:37.138  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 242 ms
+2023-04-13 12:04:37.175  INFO 3232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 12:04:37.180  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2023-04-13 12:04:37.188  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2023-04-13 12:04:37.188  INFO 3232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 12:04:37.208  INFO 3232 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 12:04:37.208  INFO 3232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:04:37.275  INFO 3232 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7803fb45, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c79a0c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@761ab184, org.springframework.security.web.header.HeaderWriterFilter@5a17cbe, org.springframework.security.web.authentication.logout.LogoutFilter@14c198c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b90e7c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65da3287, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f57fd00, org.springframework.security.web.session.SessionManagementFilter@66669359, org.springframework.security.web.access.ExceptionTranslationFilter@74ad275f]
+2023-04-13 12:04:37.282  WARN 3232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 12:04:37.378  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 12:04:37.388  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Voard'
+2023-04-13 12:04:37.391  INFO 3232 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 0.52 seconds (JVM running for 3419.269)
+2023-04-13 12:04:37.392  INFO 3232 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-13 12:04:42.411  INFO 3232 --- [RMI TCP Connection(60)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-13 12:04:42.416  INFO 3232 --- [RMI TCP Connection(60)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 12:04:42.419  INFO 3232 --- [RMI TCP Connection(60)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:04:42.420  INFO 3232 --- [RMI TCP Connection(60)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2023-04-13 12:04:42.422  INFO 3232 --- [RMI TCP Connection(60)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2023-04-13 12:04:50.285  INFO 2212 --- [restartedMain] kr.co.voard.VoardApplication             : Starting VoardApplication using Java 17.0.5 on DESKTOP-QOTDKI5 with PID 2212 (C:\Users\java1\Desktop\Workspace\SpringBoot\Voard\target\classes started by java1 in C:\Users\java1\Desktop\Workspace\SpringBoot\Voard)
+2023-04-13 12:04:50.285  INFO 2212 --- [restartedMain] kr.co.voard.VoardApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 12:04:50.332  INFO 2212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-13 12:04:50.332  INFO 2212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-13 12:04:50.944  INFO 2212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 12:04:50.990  INFO 2212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2023-04-13 12:04:51.115  WARN 2212 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.voard]' package. Please check your configuration.
+2023-04-13 12:04:51.565  INFO 2212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-13 12:04:51.575  INFO 2212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 12:04:51.576  INFO 2212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-13 12:04:51.659  INFO 2212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Voard]  : Initializing Spring embedded WebApplicationContext
+2023-04-13 12:04:51.659  INFO 2212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1326 ms
+2023-04-13 12:04:51.828  INFO 2212 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 12:04:51.878  INFO 2212 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 12:04:52.029  INFO 2212 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 12:04:52.126  INFO 2212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 12:04:52.396  INFO 2212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 12:04:52.412  INFO 2212 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-13 12:04:52.950  INFO 2212 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 12:04:52.959  INFO 2212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:04:53.339  INFO 2212 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67ef440d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a4ea69b, org.springframework.security.web.context.SecurityContextPersistenceFilter@78c4237a, org.springframework.security.web.header.HeaderWriterFilter@77f2cab8, org.springframework.security.web.authentication.logout.LogoutFilter@702cec40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b5473b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@768a9c1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@594539e2, org.springframework.security.web.session.SessionManagementFilter@7fccb, org.springframework.security.web.access.ExceptionTranslationFilter@741a0afa]
+2023-04-13 12:04:53.371  WARN 2212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 12:04:53.697  INFO 2212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 12:04:53.749  INFO 2212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Voard'
+2023-04-13 12:04:53.760  INFO 2212 --- [restartedMain] kr.co.voard.VoardApplication             : Started VoardApplication in 3.851 seconds (JVM running for 4.523)
+2023-04-13 12:09:51.218  INFO 2212 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-13 12:09:51.226  INFO 2212 --- [RMI TCP Connection(7)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-13 12:09:51.233  INFO 2212 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 12:09:51.236  INFO 2212 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-13 12:09:51.246  INFO 2212 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
